@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "image_validator"
-  s.version           = "0.1.0"
+  s.version           = "0.2.0"
   s.summary           = "Check if an image is valid"
   s.description       = "A simple wrapper around the ImageMagick command line to check if an image is valid."
   s.author            = "Tom Lea"
