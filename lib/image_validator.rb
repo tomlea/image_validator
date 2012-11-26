@@ -4,7 +4,7 @@ module ImageValidator
   def valid?(file)
     file = thing_to_io(file)
     check_image_magick_is_available
-    IO.popen("identify - &> /dev/null", "w") do |identify|
+    IO.popen("identify - >/dev/null 2>&1", "w") do |identify|
       some_content_has_been_read = false
       while blk = file.read(1024**2)
         identify << blk
