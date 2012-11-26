@@ -1,3 +1,5 @@
+require 'stringio'
+
 module ImageValidator
   def valid?(file)
     file = thing_to_io(file)
